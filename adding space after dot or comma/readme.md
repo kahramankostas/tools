@@ -1,4 +1,4 @@
-# adding space after dot or comma 
+# adding space after dot or comma in LATEX
 
 It is a mistake I frequently make to forget to put spaces after periods and commas, especially in programs that do not control errors like latex.
 As the size of the file grows, it becomes more and more difficult to find these errors.
