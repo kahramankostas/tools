@@ -3,7 +3,7 @@
 
 # # calculate the mean and standard deviation of multiple csv files
 
-# In[1]:
+# In[27]:
 
 
 import numpy as np
@@ -13,7 +13,7 @@ import pandas as pd
 
 # ## find your csv
 
-# In[2]:
+# In[28]:
 
 
 def find_the_way(path,file_format):
@@ -30,7 +30,7 @@ name_list
 
 # ## standard deviation
 
-# In[3]:
+# In[29]:
 
 
 flag=1
@@ -45,7 +45,7 @@ for i in name_list:
         std[col]=temp[col]
 
 
-# In[4]:
+# In[30]:
 
 
 std
@@ -53,22 +53,23 @@ std
 
 # ## take its transpose and save
 
-# In[5]:
+# In[31]:
 
 
 std=std.T
 std
 
 
-# In[6]:
+# In[32]:
 
 
 std.to_csv("std.csv",index=None)
+std=std.round(3)
 
 
 # # Mean
 
-# In[7]:
+# In[33]:
 
 
 flag=1
@@ -83,7 +84,7 @@ for i in name_list:
         mean[col]=temp[col]
 
 
-# In[8]:
+# In[34]:
 
 
 mean
@@ -91,15 +92,40 @@ mean
 
 # ## take its transpose and save
 
-# In[9]:
+# In[35]:
 
 
 mean=mean.T
 mean
 
 
-# In[10]:
+# ##  merging columns
+
+# In[36]:
 
 
 mean.to_csv("mean.csv",index=None)
+mean=mean.round(3)
+
+
+# In[37]:
+
+
+merged=pd.DataFrame()
+
+
+# In[42]:
+
+
+for i in mean.columns:
+    merged[i]=mean[i].astype(str)+"±"+std[i].astype(str)
+
+
+merged
+
+
+# In[43]:
+
+
+merged.to_csv("merged.csv",index=None)
 
