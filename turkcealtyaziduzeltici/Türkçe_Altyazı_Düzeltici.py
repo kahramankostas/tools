@@ -18,7 +18,11 @@ for i,ii in enumerate(files_add):
         line=file.read()
         line=line.replace("þ","ş")
         line=line.replace("ð","ğ")
-        line=line.replace("ý","ı")                    
+        line=line.replace("ý","ı")
+        line=line.replace("Þ","Ş")
+        line=line.replace("Ð","Ğ")
+        line=line.replace("Ý","I")     
+
         ths.write(str(line))
     ths.close()
  
