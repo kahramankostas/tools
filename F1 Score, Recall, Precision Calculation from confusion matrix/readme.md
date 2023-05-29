@@ -111,6 +111,8 @@ print(df)
 
 
 ```python
+# this part taken from: https://gist.github.com/leeyt/2905778bf3989eaffb76708844cf7f89
+
 def scores(cm, i):
     TP = 0
     FP = 0
