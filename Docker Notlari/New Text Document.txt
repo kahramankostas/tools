@@ -1,0 +1,15 @@
+docker build -t techarena23_toolchain .  ----> Dockerfile derleme
+docker run -it techarena23_toolchain bash  ----> Docker similasyonu acma
+
+ornek Docker File Icerigi
+---------------------------------------
+FROM amytabb/docker_ubuntu16_essentials
+COPY HelloWorld /HelloWorld
+WORKDIR /HelloWorld/
+RUN g++ -o HelloWorld helloworld.cpp
+CMD ["./HelloWorld"]
+---------------------------------------
+
+export TECHARENA23_TASK1_DIR=$(pwd)/../
+make clean; make
+./task1 -r routes/route3.txt
