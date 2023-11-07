@@ -1,3 +1,4 @@
+docker load -i .\toolchain\docker\techarena23_toolchain_docker  ----> Docker load
 docker build -t techarena23_toolchain .  ----> Dockerfile derleme
 docker run -it techarena23_toolchain bash  ----> Docker similasyonu acma
 
@@ -13,3 +14,5 @@ CMD ["./HelloWorld"]
 export TECHARENA23_TASK1_DIR=$(pwd)/../
 make clean; make
 ./task1 -r routes/route3.txt
+
+tar -czvf name-of-archive.tar.gz .\PredictionAlgorithm
