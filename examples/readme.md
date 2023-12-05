@@ -1,0 +1,1 @@
+(Under Review Paper) Semantic Verbal Fluency in Native Speakers of Turkish: A Systematic Review of Category Use, Scoring Metrics and Normative Data in Healthy Individuals., Rabia Yasa Kostas, Kahraman Kostas, Sarah E. MacPherson, and Maria K. Wolters. Journal of Clinical and Experimental Neuropsychology.
