@@ -16,6 +16,7 @@ files_add=files_add.replace(",","")
 print(files_add)
 
 command="mergecap -w outfile.pcap "+files_add
+# editcap  -c 10000 1.pcap output.pcap
 os.system(command)
 
 
